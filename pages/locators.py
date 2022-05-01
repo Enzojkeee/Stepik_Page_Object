@@ -5,6 +5,11 @@ class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     FIND_BUTTON = (By.XPATH, '//*[@id="default"]/header/div[2]/div/div[2]/form/input')
 
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_BUTTON_LINK = (By.XPATH, "//span[@class='btn-group']/a")
 class LoginPageLocators():
     LOGIN_EMAIL = (By.CSS_SELECTOR, "input[name='login-username']")
     LOGIN_PASSWORD = (By.CSS_SELECTOR, "input[name='login-password']")
@@ -24,3 +29,6 @@ class ProductPageLocators():
     BOOK_PRICE_IN_HEADER_BUSKET = (By.XPATH, '//div[@class="row"]/div[contains(@class, "basket-mini")]')
     BENEFIT_ALERT = (By.XPATH, '//*[@id="messages"]/div[2]/div/strong')
 
+class BasketPageLocators():
+    UPDATE_BUTTON = (By.XPATH, "//span[@class='input-group-btn']/button")
+    EMPTY_BUTTON_TEXT = (By.XPATH, "//div[@id='content_inner']/p")
